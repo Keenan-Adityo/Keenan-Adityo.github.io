@@ -23,7 +23,7 @@ function App() {
           ))}
         </div>
         <p className="text-4xl my-3">Website</p>
-        <div className="flex flex-row my-3">
+        <div className="flex flex-row my-3 justify-center">
           {websiteData.map((website) => (
             <Card name={website.name} imgUrl={website.imageUrl} />
           ))}
