@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  background-image: url("/src/assets/background.png");
   background-size: cover;
 }
 /* :root {
