@@ -21,13 +21,13 @@ function Home() {
           <Link to="/detail" state={{data: mobile}}>
             <Card
               name={mobile.name}
-              imgUrl={mobile.imageUrl}
+              imgUrl={mobile.imageUrl[0]}
               built={mobile.built}
             />
           </Link>
         ))}
       </div>
-      <p className="text-4xl my-3 text-center font-semibold">Website</p>
+      {/* <p className="text-4xl my-3 text-center font-semibold">Website</p>
       <div className="flex flex-row my-3 justify-center">
         {websiteData.map((website) => (
           <Card
@@ -36,7 +36,7 @@ function Home() {
             built={website.built}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
