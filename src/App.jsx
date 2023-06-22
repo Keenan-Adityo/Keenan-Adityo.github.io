@@ -1,34 +1,29 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import bgImage from "./assets/background.png";
 import viteLogo from "/vite.svg";
 import Card from "./components/card.jsx";
 import "./App.css";
+import Home from "./pages/home";
+import MobileDetail from "./pages/mobile_detail";
 import { getMobileData } from "./data/mobileapps";
 import { getWebsiteData } from "./data/website";
+import {
+  RouterProvider,
+  Link,
+  Routes,
+  Route,
+  createBrowserRouter,
+} from "react-router-dom";
 
 function App() {
-  const mobileData = getMobileData();
-  const websiteData = getWebsiteData();
   return (
-    <div className="container">
-      <div className="flex flex-col">
-        <div className="flex flex-row justify-center my-3">
-          <h1 className="text-5xl">Sad Keenanda Adityo</h1>
-          <p>Portfolio</p>
-        </div>
-        <p className="text-4xl my-3">Mobile Application</p>
-        <div className="flex flex-row my-3">
-          {mobileData.map((mobile) => (
-            <Card name={mobile.name} imgUrl={mobile.imageUrl} />
-          ))}
-        </div>
-        <p className="text-4xl my-3">Website</p>
-        <div className="flex flex-row my-3 justify-center">
-          {websiteData.map((website) => (
-            <Card name={website.name} imgUrl={website.imageUrl} />
-          ))}
-        </div>
-      </div>
+    <div className="app">
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detail/" element={<MobileDetail />} />
+        </Routes>
+      </main>
     </div>
   );
 }

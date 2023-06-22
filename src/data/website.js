@@ -4,22 +4,22 @@ const getWebsiteData = () => {
         name: "Blatech",
         imageUrl:
           "https://images.soco.id/862-Pesona-Jihyo-%E2%80%98TWICE%E2%80%99.jpg.jpeg",
-        description:
-          "",
+        built:
+          "PHP Native",
       },
       {
         name: "SISTA",
         imageUrl:
           "https://images.soco.id/862-Pesona-Jihyo-%E2%80%98TWICE%E2%80%99.jpg.jpeg",
-        description:
-          "",
+        built:
+          "PHP Native",
       },
       {
         name: "Tanya Unsoed Aja",
         imageUrl:
           "https://images.soco.id/862-Pesona-Jihyo-%E2%80%98TWICE%E2%80%99.jpg.jpeg",
-        description:
-          "",
+        built:
+          "Laravel",
       },
     ];
   };
