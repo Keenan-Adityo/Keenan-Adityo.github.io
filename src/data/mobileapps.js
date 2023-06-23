@@ -3,7 +3,7 @@ const getMobileData = () => {
     {
       name: "Ditonton",
       imageUrl: [
-        "ditonton1.PNG",
+        "ditonton1.png",
         "ditonton2.png",
         "ditonton3.png",
         "ditonton4.png",

@@ -21,7 +21,7 @@ function MobileDetail() {
       <p className="text-2xl text-center">{data.description} </p>
       <div className="flex flex-row my-3 justify-center">
       {data.imageUrl.map((data) => (
-          <img src={'./src/assets/images/' + data} alt={data} className="h-96 mx-4" />
+          <img src={'https://raw.githubusercontent.com/Keenan-Adityo/Keenan-Adityo.github.io/main/src/assets/images/' + data} alt={data} className="h-96 mx-4" />
         ))}
       </div>
       
