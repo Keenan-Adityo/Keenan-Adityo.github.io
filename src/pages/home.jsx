@@ -8,7 +8,7 @@ function Home() {
   const mobileData = getMobileData();
   const websiteData = getWebsiteData();
   return (
-    <div className="flex flex-col p-5 bg-[url('/assets/background.png')]">
+    <div className="flex flex-col p-5 ">
       <div className="flex flex-row justify-center my-3">
         <h1 className="text-5xl">Sad Keenanda Adityo</h1>
         <p>Portfolio</p>
@@ -37,6 +37,10 @@ function Home() {
           />
         ))}
       </div> */}
+      <p className="  text-4xl my-3 text-center font-semibold">
+        Certification
+      </p>
+        
     </div>
   );
 }

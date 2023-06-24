@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 :root {
+  background-image: url('https://raw.githubusercontent.com/Keenan-Adityo/Keenan-Adityo.github.io/main/src/assets/background.png');
   background-size: cover;
 }
 /* :root {
