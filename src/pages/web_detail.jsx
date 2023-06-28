@@ -4,7 +4,7 @@ import { getMobileData } from "../data/mobileapps.js";
 import { getWebsiteData } from "../data/website.js";
 import { useLocation } from "react-router-dom";
 
-function MobileDetail() {
+function WebDetail() {
   const location = useLocation();
   const data = location.state?.data;
   return (
@@ -48,4 +48,4 @@ function MobileDetail() {
   );
 }
 
-export default MobileDetail;
+export default WebDetail;

@@ -10,7 +10,7 @@ function Home() {
   const websiteData = getWebsiteData();
   const certificationsData = getCertificationsData();
   return (
-    <div className="flex flex-col p-5 ">
+    <div className="flex flex-col p-5 bg-[url('https://raw.githubusercontent.com/Keenan-Adityo/Keenan-Adityo.github.io/main/src/assets/background.png')] bg-no-repeat">
       <div className="flex flex-row justify-center my-3">
         <h1 className="text-5xl">Sad Keenanda Adityo</h1>
         <p>Portfolio</p>
@@ -32,11 +32,13 @@ function Home() {
       <p className="text-4xl my-3 text-center font-semibold">Website</p>
       <div className="flex flex-row my-3 justify-center">
         {websiteData.map((website) => (
-          <Card
-            name={website.name}
-            imgUrl={website.imageUrl}
-            built={website.built}
-          />
+          <Link to="/detail" state={{ data: website }}>
+            <Card
+              name={website.name}
+              imgUrl={website.imageUrl}
+              built={website.built}
+            />
+          </Link>
         ))}
       </div>
       <p className="  text-4xl my-3 text-center font-semibold">Certification</p>
