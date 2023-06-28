@@ -5,7 +5,6 @@ import { getWebsiteData } from "../data/website";
 import { Link } from "react-router-dom";
 import { getCertificationsData } from "../data/certifications.js";
 
-
 function Home() {
   const mobileData = getMobileData();
   const websiteData = getWebsiteData();
@@ -21,7 +20,7 @@ function Home() {
       </p>
       <div className="flex flex-row my-3 justify-center">
         {mobileData.map((mobile) => (
-          <Link to="/detail" state={{data: mobile}}>
+          <Link to="/detail" state={{ data: mobile }}>
             <Card
               name={mobile.name}
               imgUrl={mobile.imageUrl[0]}
@@ -40,15 +39,16 @@ function Home() {
           />
         ))}
       </div>
-      <p className="  text-4xl my-3 text-center font-semibold">
-        Certification
-      </p>
+      <p className="  text-4xl my-3 text-center font-semibold">Certification</p>
       <div className="flex flex-row my-3 justify-center">
         {certificationsData.map((certifications) => (
-          <Card
-            name={certifications.name}
-            imgUrl={certifications.imageUrl}
-          />
+          <Link to={certifications.link}>
+            <Card
+              name={certifications.name}
+              imgUrl={certifications.imageUrl}
+              built={certifications.built}
+            />
+          </Link>
         ))}
       </div>
     </div>

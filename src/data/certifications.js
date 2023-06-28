@@ -1,13 +1,26 @@
 const getCertificationsData = () => {
     return [
       {
-        name: "Dicoding Flutter Expert",
+        name: "Flutter Expert",
+        built: "Dicoding",
         imageUrl:
           "flutter_logo.png",
-        link: "dicoding.com/certificates/07Z652GNJXQR",
-        
+        link: "https://dicoding.com/certificates/07Z652GNJXQR",
       },
-      
+      {
+        name: "Flutter Fundamental",
+        built: "Dicoding",
+        imageUrl:
+          "flutter_logo.png",
+        link: "https://dicoding.com/certificates/0LZ036M8RZ65",
+      },
+      {
+        name: "Flutter Beginner",
+        built: "Dicoding",
+        imageUrl:
+          "flutter_logo.png",
+        link: "https://dicoding.com/certificates/JLX13GL82P72",
+      },
     ];
   };
   
